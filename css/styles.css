@@ -56,6 +56,7 @@ body {
 .link:active {
   color: var(--accent-color);
   fill: var(--accent-color);
+  
 }
 .container {
   margin-left: auto;
@@ -195,8 +196,10 @@ img {
   z-index: 4;
 }
 .beckdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
+
 }
 .modal {
   position: absolute;
@@ -212,9 +215,6 @@ img {
 }
 .icon-cloous {
   display: block;
-
-  margin: 0;
-  padding: 0;
 }
 .section-main-title {
   width: 1600px;
