@@ -187,8 +187,12 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+    
 }
+
 .modal-close {
   display: flex;
   align-items: center;
@@ -211,7 +215,9 @@ img {
   opacity: 0;
   pointer-events: none;
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(0);
 }
 .modal {
   position: absolute;
@@ -219,14 +225,18 @@ img {
   height: 581px;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: scale(1);
+  transform:  translate(-50%, -50%);
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(77, 36, 36, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    backgraund-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    backgraund-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
 .icon-cloous {
   display: block;
 }
